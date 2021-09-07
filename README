@@ -1,0 +1,21 @@
+List loaded modules:
+$ lsmod 
+
+Information about the module:
+$ modinfo hello_1.ko
+
+Insert kernel module:
+$ sudo insmod hello_1.ko
+
+Insert kernel module with options:
+$ sudo insmod hello_1.ko p1=foo p2=bar p3=baz
+
+Remove kernel module:
+$ sudo rmmod hello_1.ko
+
+With module dependency:
+$ depmod 
+$ depmod -a
+$ modprobe module
+$ modprobe -r module
+
